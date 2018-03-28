@@ -1,0 +1,27 @@
+{
+  "name": "asl-pdf-renderer",
+  "version": "1.0.0",
+  "description": "Express middleware to render a page as a pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint --config lennym"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKHomeOffice/asl-pdf-renderer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UKHomeOffice/asl-pdf-renderer/issues"
+  },
+  "homepage": "https://github.com/UKHomeOffice/asl-pdf-renderer#readme",
+  "dependencies": {
+    "r2": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-lennym": "^1.4.1"
+  }
+}
