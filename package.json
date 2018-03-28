@@ -4,7 +4,7 @@
   "description": "Express middleware to render a page as a pdf",
   "main": "index.js",
   "scripts": {
-    "test": "eslint --config lennym"
+    "test": "eslint . --config lennym"
   },
   "repository": {
     "type": "git",
