@@ -1,10 +1,12 @@
 {
-  "name": "asl-pdf-renderer",
+  "name": "@asl/pdf-renderer",
   "version": "1.0.0",
   "description": "Express middleware to render a page as a pdf",
   "main": "index.js",
   "scripts": {
-    "test": "eslint . --config lennym"
+    "test": "npm run test:lint && npm run test:unit",
+    "test:lint": "eslint . --config lennym",
+    "test:unit": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,11 @@
     "r2": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-lennym": "^1.4.1"
+    "eslint": "^4.15.0",
+    "eslint-config-lennym": "^1.4.1",
+    "mocha": "^5.0.5"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.digital.homeoffice.gov.uk/artifactory/api/npm/npm-virtual/"
   }
 }
