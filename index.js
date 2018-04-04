@@ -2,6 +2,9 @@ const fetch = require('r2');
 const https = require('https');
 
 module.exports = host => {
+  if (!host || typeof host !== 'string') {
+    throw new Error('@asl/pdf-renderer - pdf renderer url must be provided');
+  }
   const pdfIsSecure = host.match(/^https:/);
   const agent = pdfIsSecure && new https.Agent({
     rejectUnauthorized: false
